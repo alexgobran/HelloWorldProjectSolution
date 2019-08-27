@@ -87,7 +87,22 @@ namespace HelloWorldProject {
                 
             }
             var avgDistance = TotalDistance/ distances.Length;
-           
+
+            //arrays-fixed
+            int[] students = new int[5];
+            students[0] = 7;
+            students[1] = 3;
+            students[2] = 4;
+            students[3] = 15;
+            students[4] = 5;
+
+            Console.WriteLine(students);
+            //array of string
+
+            string[] names = new string[7];
+            names[0] = "Alex";
+            names[1] = "Lidya";
+
         }
     }
 }

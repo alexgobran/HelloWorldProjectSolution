@@ -42,7 +42,7 @@ namespace HelloWorldProject {
             //Looping with for()
 
             total = 0;
-            for (var idx = 0; idx < 5; idx = idx++)
+            for(var idx = 0; idx < 5; idx++)
             {
                 total = total + (ints[idx] * (ints)[idx]);
 
@@ -53,15 +53,15 @@ namespace HelloWorldProject {
             // use wild loop or for loop to add them up get the average and print it out on console line
 
             var scores = new int[] { 738, 609, 307, 959, 805, 689, 402, 972, 359, 140 };
-            #region assignment compute the average
-            total = 0;
-            for (var idx = 0; idx < 10; idx++) ;
+
+            var tots = 0;
+            for (var idx = 0; idx < 10; idx++)
             {
 
-                total = total + scores[index];
+                tots = tots + (scores[index]);
 
             }
-            var avg = total / scores.Length;
+            var avg = tots / scores.Length;
             Console.WriteLine("Average Is " + avg);
 
 
@@ -73,6 +73,21 @@ namespace HelloWorldProject {
             {
                 grandtotal += score;
             }
+            Console.WriteLine(grandtotal);
+
+            //fooating point numbers
+            // get average with for each loop to get total
+            var TotalDistance = 0.0;
+            var distances = new double[] { 599, 356, 8.99, 7.47, 8.17, 6.78, 6.33};
+            
+            foreach (var distance in distances)
+            {
+
+                TotalDistance += distance;
+                
+            }
+            var avgDistance = TotalDistance/ distances.Length;
+           
         }
     }
 }
